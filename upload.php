@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <div class="my-4">
-    <h1>Photo Gallery</h1>
+    <h1>Choose image file to uplaod into Photo Gallery</h1>
 </div>
 
 <?php if ($success): ?>
