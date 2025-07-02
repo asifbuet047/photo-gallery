@@ -1,0 +1,10 @@
+-- Active: 1748537345198@@127.0.0.1@3306@photo_gallery
+CREATE DATABASE IF NOT EXISTS photo_gallery;
+
+CREATE TABLE images (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(128) NOT NULL,
+    description TEXT NOT NULL,
+    filename VARCHAR(255) NOT NULL,
+    upload_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
