@@ -10,13 +10,13 @@ $images = $stmt->fetchAll();
 ?>
 
 <div class="my-5-text-center">
-    <h1 class="display-4">Photo Gallery</h1>
+
     <p class="lead"> Browse the latest uploaded images</p>
 </div>
 
 <div class="row ">
     <?php foreach ($images as $image): ?>
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;margin: 8px;">
             <img src="assets/images/<?php echo htmlspecialchars($image['filename']); ?>" class="card-img-top"
                 alt="<?php echo htmlspecialchars($image['title']); ?>">
             <div class="card-body">
